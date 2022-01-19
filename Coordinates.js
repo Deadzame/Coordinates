@@ -1,4 +1,3 @@
-﻿mp.events.add("render", () => {
 	if (!loggedin || localplayer.getVariable('IS_ADMIN') !== true) return; //Проверка на админа 
 	else mp.events.callRemote('render');
     var player = mp.players.local;
@@ -12,4 +11,3 @@
               scale: [0.4, 0.4], // Размер
               outline: true
           });   
-});
